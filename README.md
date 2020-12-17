@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+> 个人配置项目说明  
+
+#### webpack 扩展 
+1. react-app-rewired 
+
+  使用该插件重写 webpack 配置
+
+
+#### 插件扩展说明 
+
+1. react-router-dom  react 路由控制
+
+2. react-loadable  实现 React 应用程序的非同步载入  
+
+
+> 配置过程
+
+1. 配置项目 alia 
+  1.1 配置 webpack 扩展设置 alia 模块
+  1.2 配置 ts 文件 
+  1.3 create-react-app 修改运行自定义 脚本script
+
+2. 配置本地数据交互
+  2.1 配置项目代理 
+  2.2 配置项目 http 请求封装 
+  2.3 配置项目 请求异常 集中处理 
+
+3. 配置项目数据管理 redux 
+  
+
+4. 配置业务项目路由 
+
+
+
+
+
+
