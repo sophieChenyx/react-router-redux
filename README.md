@@ -88,8 +88,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 > 配置过程
 
 1. 配置项目 alia 
-  1.1 配置 webpack 扩展设置 alia 模块
-  1.2 配置 ts 文件 
+  1.1 配置 webpack 扩展设置 alia 模块  ...
+  1.2 配置 ts 文件  
   1.3 create-react-app 修改运行自定义 脚本script
 
 2. 配置本地数据交互
@@ -98,7 +98,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   2.3 配置项目 请求异常 集中处理 
 
 3. 配置项目数据管理 redux 
-  
+    
 
 4. 配置业务项目路由 
 
