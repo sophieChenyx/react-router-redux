@@ -5,9 +5,7 @@
  */
 
 import * as React from 'react';
-import { Spin } from 'antd';
-
-const Loading = () => <Spin></Spin>
+const Loading = () => <>加载中 ing </>
 
 export default Loading;
 

@@ -11,7 +11,7 @@ module.exports = override(
   }),
   addWebpackAlias({
     "@": path.resolve(__dirname, 'src'),
-    "@views": path.resolve(__dirname, 'src/views'),
+    "@views": path.resolve(__dirname, 'src/views')
   }),
   addDecoratorsLegacy(),    // 修饰符
 );

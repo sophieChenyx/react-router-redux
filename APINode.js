@@ -23,6 +23,13 @@ app.all('*', function (req, res, next) {
 
 });
 
+// 菜单栏目
+// 0. 首页 首页数据 静态数据  首页数据 接口 获取 QQ空间 
+// 1. 文本信息
+// 2. 音频信息
+// 3. 视频信息
+// 4. 更多 
+
 // 接口1 数据  用户基础信息 
 app.get('/api/user', (req, res) => {
   console.log('%% api/user get  request %%', req)
@@ -82,8 +89,22 @@ app.get('/api/login', (req, res) => {
   });
 });
 
-// 配置 服务器端口  8080 
+// 获取首页数据 最近的10条推送  
+app.get('/api/home', (req, res) => {
+  console.log('%% api/user get  request %%', req)
+  res.send({
+    code: 200,
+    msg: 'success',
+    data: {
+      imgurls: [
+        // 图片链接数组 轮播
+      ]
 
+    }
+  });
+});
+
+// 配置 服务器端口  8080 
 var server = app.listen(8080, () => {
   console.log('% node 服务运行中 %')
 })

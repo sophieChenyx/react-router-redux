@@ -5,6 +5,6 @@
       "@/*": ["*"],
       "@views/*": ["views/*"]
     },
-    "jsx": "preserve",
+    "jsx": "preserve",  
   }
 }
