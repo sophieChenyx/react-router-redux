@@ -3,6 +3,6 @@
  * @date 2020-12-25 🎄圣诞快乐
 */
 
-const Index = () => (<h1>首页</h1>);
+const Index = () => (<h1> 没有一点内容 </h1>);
 
 export default Index;

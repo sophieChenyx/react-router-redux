@@ -11,3 +11,19 @@ export interface IBaseProps {
   route?: any;
   // children?: React.ReactNode;
 }
+
+
+/**
+ * 基础路由数据定义 
+ * @export
+ * @interface IRouterProps
+ */
+export interface IRouterProps {
+  path: string;
+  label: string;
+  text: string;
+  icon: React.ReactNode;
+  component?: any;
+  children?: object[] | any;
+  // children?: React.ReactNode;
+}

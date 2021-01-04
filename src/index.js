@@ -1,12 +1,9 @@
 import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 import React from 'react';
-
 import NewLoadable from '@/common/components/NewLoadable';
-// import NewLoadable from './commom/components/NewLoadable';
-
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 // const App = lazy(() =>
 // import( /* webpackChunkName:"App" */ /*webapckMode: "lazy*/'./App'));
@@ -16,7 +13,9 @@ const App = NewLoadable({ loader: () => import('@/views/App') })
 ReactDOM.render(
   <React.StrictMode>
     {/* <Suspense fallback={<h1>loading</h1>}> */}
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
     {/* </Suspense> */}
   </React.StrictMode>,
   document.getElementById('root')
