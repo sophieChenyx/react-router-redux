@@ -3,6 +3,8 @@
  * @description 路由配置文件
  * @date 2020-12-25 🎄圣诞快乐
 */
+import { Switch, Route } from "react-router-dom";
+import { IRouterProps } from "@/common/js/reactIInter";
 import NewLoadable from '@/common/components/NewLoadable';
 import HomeWorkIcon from '@material-ui/icons/HomeWork';
 import MoodIcon from '@material-ui/icons/Mood';
@@ -11,8 +13,9 @@ import FeaturedPlayListIcon from '@material-ui/icons/FeaturedPlayList';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import MoreIcon from '@material-ui/icons/More';
 import MessageIcon from '@material-ui/icons/Message';
+import Error from "@/common/components/Error";
 
-const RouteConfig = [
+export const RouteConfig = [
   // HOME
   {
     path: '/',
@@ -92,5 +95,35 @@ const RouteConfig = [
   // }
 ];
 
-export default RouteConfig;
+
+export function renderRoutes(RouteConfigs: Array<IRouterProps>): React.ReactNode {
+  return RouteConfigs.map((item: IRouterProps) => {
+    if (item.children && item.children.length) {
+      return renderRoutes(item.children)
+    } else {
+      return (
+        <Route
+          key={item.path}
+          path={item.path}
+          exact
+          render={() => {
+            return <item.component />
+          }}
+        />
+      )
+    }
+  })
+}
+
+export function AppWrapper() {
+  return (
+    <div>
+      <Switch>
+        {renderRoutes(RouteConfig)}
+        <Route render={Error} />
+      </Switch>
+    </div>
+  )
+}
+
 
