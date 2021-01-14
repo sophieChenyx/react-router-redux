@@ -6,18 +6,15 @@
  */
 
 import * as React from 'react';
+import Paper from '@material-ui/core/Paper';
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 
 function NoContent() {
-  return (<>
-    暂无内容
-  </>)
+  return <Paper>
+    当前没有内容
+    <CheckBoxOutlineBlankIcon />
+  </Paper>
 }
 
 export default NoContent;
-
-
-
-
-
-
 

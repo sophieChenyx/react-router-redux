@@ -22,11 +22,14 @@ const App: React.FC<IBaseProps & RouteComponentProps> = (props) => {
   return (
     <div className={styles.index}>
       {/* // 头部样式 */}
+      {/*  20210112需求说明 这里做配置  */}
+      {/* 如果 切换到 另外一个身份 dispatch 全局身份  */}
+      {/* 并且改变菜单栏目 权限 */}
       <div>
         <AppBar position="static">
           <Toolbar variant="dense">
             <Typography color="inherit">
-              更多内容可前往站点
+              更多内容可前往站点 
             </Typography>
           </Toolbar>
         </AppBar>

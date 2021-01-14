@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "isolatedModules": false,
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"],
@@ -7,4 +8,5 @@
     },
     "jsx": "preserve",  
   }
+  
 }

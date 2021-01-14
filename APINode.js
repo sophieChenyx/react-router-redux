@@ -9,7 +9,7 @@ var app = express();
 
 app.all('*', function (req, res, next) {
 
-  res.header('Access-Control-Allow-Origin', 'http://test.test.com:8080');
+  res.header('Access-Control-Allow-Origin', '*');
 
   res.header('Access-Control-Allow-Credentials', true);
 
